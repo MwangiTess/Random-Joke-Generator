@@ -5,6 +5,10 @@ const url = "https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,religious,polit
 let getJoke = () =>{
     fetch(url)
     .then(res => res.json())
-    .then(data => console.log(data.joke));
+    .then(data => {
+        jokeContainer.textContent = `${data.joke}`;
+    });
 }
+
+btn.addEventListener("click", getJoke);
 getJoke();
