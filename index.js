@@ -38,7 +38,12 @@ copyBtn.addEventListener("click", ()=>{
     // writeText() property writes the specified text string to the system clipboard.
 
     navigator.clipboard.writeText(jokeContainer.innerText);
-})
+});
+
+twitterBtn .addEventListener("click", ()=>{
+    let tweetUrl = `https://twitter.com/intent/tweet?url=${jokeContainer.innerText}`
+    window.open(tweetUrl, "_blank"); // opening a new twitter tab with passing quote in the url
+});
 
 btn.addEventListener("click", getJoke);
 
