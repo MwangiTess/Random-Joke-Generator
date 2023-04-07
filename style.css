@@ -6,10 +6,10 @@
 }
 
 body{
-    background-color: #fa8072;
+    background-color: maroon;
 }
 .Container{
-    width: 80vmin;
+    width: 100vmin;
     padding: 50px 40px;
     background-color: #15161a;
     position: absolute;
