@@ -22,13 +22,6 @@ let getJoke = () =>{
 }
 
 
-/*soundBtn.addEventListener("click", () =>{
-    // The SpeechSynthesisUtterance is a web speech api that represents a speech request.
-    let utterance = new SpeechSynthesisUtterance(`${jokeContainer.innerText}`);
-    SpeechSynthesis.speak(utterance); // speak method of speechSynthesis speaks the utterance
-
-});*/
-
 soundBtn.addEventListener("click", () => {
     // Check if the SpeechSynthesis object is available
     if ('speechSynthesis' in window) {
@@ -39,6 +32,13 @@ soundBtn.addEventListener("click", () => {
         console.log("SpeechSynthesis is not available");
     }
 });
+
+copyBtn.addEventListener("click", ()=>{
+    // copying the joke text on copyBtn 
+    // writeText() property writes the specified text string to the system clipboard.
+
+    navigator.clipboard.writeText(jokeContainer.innerText);
+})
 
 btn.addEventListener("click", getJoke);
 
