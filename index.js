@@ -1,3 +1,5 @@
+document.addEventListener('DOMContentLoaded', function() {
+
 const jokeContainer = document.getElementById("joke");
 const btn = document.getElementById("btn");
 const soundBtn = document.querySelector(".sound");
@@ -21,7 +23,12 @@ let getJoke = () =>{
     });
 }
 
-
+document.addEventListener('keydown', (event) => {
+    if (event.code === 'Enter') {
+      getJoke();
+    }
+  });
+  
 soundBtn.addEventListener("click", () => {
     // Check if the SpeechSynthesis object is available
     if ('speechSynthesis' in window) {
@@ -47,3 +54,4 @@ twitterBtn .addEventListener("click", ()=>{
 
 btn.addEventListener("click", getJoke);
 
+})
