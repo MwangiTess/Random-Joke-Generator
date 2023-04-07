@@ -2,7 +2,6 @@
 
 Random Joke Generator
 
-A simple web application that generates random jokes fetched from an API and allows users to perform different actions such as reading the joke aloud, copying the joke text, and sharing the joke on Twitter.
 
 Technologies Used: 
  - HTML

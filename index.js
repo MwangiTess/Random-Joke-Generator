@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
 
-const jokeContainer = document.getElementById("joke");
-const btn = document.getElementById("btn");
-const soundBtn = document.querySelector(".sound");
+//const jokeContainer = document.getElementById("joke");
+//const btn = document.getElementById("btn");
+//const soundBtn = document.querySelector(".sound");
 const copyBtn = document.querySelector(".copy");
 const twitterBtn = document.querySelector(".twitter");
 

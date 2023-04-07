@@ -19,7 +19,7 @@ body{
     border-radius: 15px;
     box-shadow: 20px 20px 40px rgba(97, 63, 0, 0.4);
 }
-span{
+/*span{
     display: block;
     text-align: center;
     font-size: 100px;
